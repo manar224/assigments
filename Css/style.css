@@ -1,0 +1,127 @@
+:root{
+    --pale-blue:hsl(225, 100%, 94%);
+    --bright-blue:hsl(245, 75%, 52%);
+    --very-pale-blue:hsl(225, 100%, 98%);
+    --desaturated-blue:hsl(224, 23%, 55%);
+    --dark-blue:hsl(223, 47%, 23%);
+}
+
+*{
+    margin:0;
+    padding:0;
+    font-family: "Red Hat Display";
+}
+
+img{
+    width:100%;
+    border-radius: 15px 15px 0 0;
+}
+
+h2{
+    color:var(--dark-blue);
+    margin:1.5rem;
+    font-weight: 900;
+}
+
+h4{
+    color:var(--dark-blue);
+    font-size: 16px;
+    font-weight: 800;
+}
+
+p{
+    color:var(--desaturated-blue);
+    font-weight: 500;
+}
+
+#text{
+    padding:0 2rem;
+}
+
+body{
+    background-color: var(--pale-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main{
+    width:90%;
+    background-color: white;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.price img{
+    width:45px;
+}
+
+.price{
+    width:80%;
+    margin: 1.5rem 0;
+    background-color: var(--very-pale-blue);
+    border-radius: 8px;
+    padding:1rem 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+
+#change-button{
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: 2rem;
+    color:var(--bright-blue);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+#change-button:hover{
+    opacity: 0.7;
+}
+
+#payment{
+    cursor: pointer;
+    color:white;
+    font-size: 16px;
+    font-weight: 700;
+    box-shadow: 0px 17px 10px 0px hsl(225, 100%, 94%);
+
+    width:85%;
+    background-color: var(--bright-blue);
+    border:none;
+    border-radius: 8px;
+    padding:0.8rem;
+}
+
+#payment:hover{
+    opacity: 0.7;
+}
+
+#cancel{
+    cursor: pointer;
+    border:none;
+    background-color: white;
+    color:var(--desaturated-blue);
+    font-size: 16px;
+    font-weight: 700;
+
+    margin:1.5rem;
+}
+
+#cancel:hover{
+    color:var(--dark-blue);
+}
+
+@media screen and (min-width:450px) {
+    main{
+        width:350px;
+    }
+}
